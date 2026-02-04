@@ -112,9 +112,32 @@
         }
 
         .details-section {
-            padding: 40px 50px;
-            background: white;
-        }
+    padding: 40px 50px;
+    background: url('./wedpic.png') center center / cover no-repeat;
+    /* Alternative options you can swap in: */
+    /* background: url('https://thumbs.dreamstime.com/b/african-floral-paisley-seamless-textile-pattern-abstract-background-circle-curve-lines-traditional-ethnic-tribal-407379608.jpg') center center / cover no-repeat; */
+    /* background: url('https://thumbs.dreamstime.com/b/textile-fashion-african-print-fabric-super-wax-abstract-seamless-pattern-vector-illustration-file-137545492.jpg') center center / cover no-repeat; */
+    
+    position: relative;          /* Needed for overlay */
+}
+
+/* Add a subtle overlay to improve text readability on the patterned background */
+.details-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.0);  /* White overlay ~78% opacity – adjust 0.65–0.85 for preference */
+    z-index: 0;
+}
+
+/* Ensure content sits above the overlay */
+.details-section > * {
+    position: relative;
+    z-index: 1;
+}
 
         .event-details {
             margin: 30px 0;
