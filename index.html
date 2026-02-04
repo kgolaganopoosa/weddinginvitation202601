@@ -193,6 +193,33 @@
             letter-spacing: 1px;
         }
 
+        .location-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #1e3a5f;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(30, 58, 95, 0.3);
+        }
+
+        .location-btn:hover {
+            background: #2d5a7b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(30, 58, 95, 0.4);
+        }
+
+        .location-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
         .pattern-overlay {
             position: absolute;
             top: 0;
@@ -247,14 +274,26 @@
             <div class="event-details">
                 <h3>Day One Celebration</h3>
                 <p><strong>Date:</strong> 01 May 2026</p>
-                <p><strong>Venue:</strong> 2959 Sasol Section Maboloka</p>
-                <p style="padding-left: 20px;">Next to Mbhele Funeral Parlour</p>
+                <p><strong>Venue:</strong> 2959 Sasol Section Maboloka, Next to Mbhele Funeral Parlour</p>
+                <!--<p style="padding-left: 20px;"></p>-->
+                <a href="https://www.google.com/maps/search/?api=1&query=2959+Sasol+Section+Maboloka+Mbhele+Funeral+Parlour" target="_blank" class="location-btn">
+                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    View on Map
+                </a>
             </div>
 
             <div class="event-details">
                 <h3>Day Two Celebration</h3>
                 <p><strong>Date:</strong> 02 May 2026</p>
                 <p><strong>Venue:</strong> 14325 Mamelodi East, Tsamaya Road</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=14325+Mamelodi+East+Tsamaya+Road" target="_blank" class="location-btn">
+                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    View on Map
+                </a>
             </div>
 
             <!-- Scripture Section -->
